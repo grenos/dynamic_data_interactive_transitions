@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showingSecondVC = false
+    
     var body: some View {
-        NavigationV
+        
+        NavigationView {
             VStack(alignment: .leading) {
                 
                 Text("Video Title").font(.title)
@@ -20,16 +24,19 @@ struct ContentView: View {
                 
                 NavigationLink(destination: ChannelView()) {
                     Text("Add Channel")
+                    
                     Button(action: {
-                        
+                        self.showingSecondVC.toggle()
                     }) {
                         Text("Add new idea!")
+                    }.sheet(isPresented: $showingSecondVC){
+                        SecondView()
                     }
                     
                     Spacer()
                 }
                 .padding()
-                .NavigationBarTitle("Channel Name")
+                .navigationBarTitle("Channel Name")
                 
             }
         }
