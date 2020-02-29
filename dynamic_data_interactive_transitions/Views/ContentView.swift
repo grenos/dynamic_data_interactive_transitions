@@ -11,37 +11,45 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var showingSecondVC = false
+    @ObservedObject var videoIdea = VideoIdea()
+    @EnvironmentObject var channelData: ChannelData
     
     var body: some View {
         
         NavigationView {
             VStack(alignment: .leading) {
                 
-                Text("Video Title").font(.title)
-                Text("Video Content").font(.subheadline)
+                Text(videoIdea.title).font(.title)
+                Text(videoIdea.contentIdea).font(.subheadline)
                 
                 Divider()
                 
                 NavigationLink(destination: ChannelView()) {
                     Text("Add Channel")
-                    
+                }
+                
+                
                     Button(action: {
                         self.showingSecondVC.toggle()
                     }) {
                         Text("Add new idea!")
                     }.sheet(isPresented: $showingSecondVC){
-                        SecondView()
+                        SecondView(
+                            videoTitle: self.$videoIdea.title,
+                            videoContent: self.$videoIdea.contentIdea
+                        ).environmentObject(self.channelData)
                     }
-                    
+                
+                
                     Spacer()
-                }
-                .padding()
-                .navigationBarTitle("Channel Name")
+                    
+                }.padding()
+                .navigationBarTitle("\(channelData.channelName)")
                 
             }
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

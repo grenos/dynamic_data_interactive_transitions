@@ -9,6 +9,6 @@
 import Foundation
 import Combine
 
-final class ChannelData {
-    
+final class ChannelData: ObservableObject {
+    @Published var channelName: String = "YouTube Channel"
 }

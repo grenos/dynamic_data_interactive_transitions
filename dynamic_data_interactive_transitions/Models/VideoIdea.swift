@@ -9,8 +9,9 @@
 import Foundation
 import Combine
 
-final class VideoIdea {
-    
+final class VideoIdea: ObservableObject {
+   @Published var title: String = ""
+   @Published var contentIdea: String = ""
 }
 
 

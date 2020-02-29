@@ -17,7 +17,7 @@
 		7DD329402404175100577C7C /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3293F2404175100577C7C /* SecondView.swift */; };
 		7DD3294224041CF800577C7C /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3294124041CF800577C7C /* ChannelView.swift */; };
 		7DD3294524041DCB00577C7C /* VideoIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3294424041DCB00577C7C /* VideoIdea.swift */; };
-		7DD3294724041DFB00577C7C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3294624041DFB00577C7C /* File.swift */; };
+		7DD3294724041DFB00577C7C /* ChannelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3294624041DFB00577C7C /* ChannelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		7DD3293F2404175100577C7C /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		7DD3294124041CF800577C7C /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
 		7DD3294424041DCB00577C7C /* VideoIdea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoIdea.swift; sourceTree = "<group>"; };
-		7DD3294624041DFB00577C7C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		7DD3294624041DFB00577C7C /* ChannelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				7DD3294424041DCB00577C7C /* VideoIdea.swift */,
-				7DD3294624041DFB00577C7C /* File.swift */,
+				7DD3294624041DFB00577C7C /* ChannelData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 				7DD32928240412BB00577C7C /* AppDelegate.swift in Sources */,
 				7DD329402404175100577C7C /* SecondView.swift in Sources */,
 				7DD3292A240412BB00577C7C /* SceneDelegate.swift in Sources */,
-				7DD3294724041DFB00577C7C /* File.swift in Sources */,
+				7DD3294724041DFB00577C7C /* ChannelData.swift in Sources */,
 				7DD3292F240412BB00577C7C /* ContentView.swift in Sources */,
 				7DD3292D240412BB00577C7C /* dynamic_data_interactive_transitions.xcdatamodeld in Sources */,
 			);
